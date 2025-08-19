@@ -582,11 +582,3 @@ h1, h2, h3, h4, h5, h6 {
 .photo-grid figcaption {
     color: #dddddd;
 }
-
-/* Global link colours for dark mode */
-a {
-    color: #8fa4f9;
-}
-a:hover {
-    color: #a890f2;
-}
