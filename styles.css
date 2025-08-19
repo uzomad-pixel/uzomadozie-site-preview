@@ -8,15 +8,17 @@
 body {
     font-family: 'Open Sans', Arial, sans-serif;
     line-height: 1.6;
-    color: #333;
-    background-color: #fff;
+    /* Dark theme base colors */
+    color: #ddd;
+    background-color: #0d0d0d;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     margin-bottom: 0.5em;
-    color: #0c2340;
+    /* Headings are bright for dark backgrounds */
+    color: #ffffff;
 }
 
 /* Utility */
@@ -481,4 +483,110 @@ h1, h2, h3, h4, h5, h6 {
     .media-grid {
         grid-template-columns: 1fr;
     }
+}
+
+/* -------------------------------------------------------------------
+   Dark theme overrides
+   These rules adjust backgrounds, text colours and other elements to
+   accommodate a dark colour scheme across the site. New colours are
+   chosen to provide high contrast and readability while maintaining
+   the original accent hues. Feel free to tweak these values to
+   personalise your dark palette. */
+
+/* Header */
+.site-header {
+    background: rgba(13, 13, 13, 0.9);
+}
+.logo a {
+    color: #ffffff;
+}
+.main-nav a {
+    color: #dddddd;
+}
+.main-nav a:hover {
+    color: #7e86d4;
+}
+
+/* Hero overlay - darken the background image slightly */
+.hero .overlay {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+/* Sections */
+.updates,
+.thought-leadership,
+.media,
+.photography,
+.community,
+.contact {
+    background: #141414;
+    color: #dddddd;
+}
+
+/* Cards and lists */
+.update-card,
+.thought-list {
+    background: #1f1f1f;
+    color: #dddddd;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+.update-card h3,
+.thought-list li {
+    color: #ffffff;
+}
+.thought-list a {
+    color: #8fa4f9;
+}
+.thought-list a:hover {
+    color: #a890f2;
+}
+
+/* Forms */
+.contact-form input,
+.contact-form textarea {
+    background: #1f1f1f;
+    color: #dddddd;
+    border-color: #333333;
+}
+
+/* Buttons */
+.btn-primary {
+    background: #5b7fff;
+    color: #ffffff;
+}
+.btn-primary:hover {
+    background: #3e57b3;
+}
+.btn-secondary {
+    background: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    border: 1px solid #555555;
+}
+.btn-secondary:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Footer */
+.site-footer {
+    background: #0d0d0d;
+    color: #888888;
+}
+.footer-nav a {
+    color: #aaaaaa;
+}
+.footer-nav a:hover {
+    color: #ffffff;
+}
+
+/* Photography captions */
+.photo-grid figcaption {
+    color: #dddddd;
+}
+
+/* Global link colours for dark mode */
+a {
+    color: #8fa4f9;
+}
+a:hover {
+    color: #a890f2;
 }
